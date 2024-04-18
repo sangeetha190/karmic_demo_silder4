@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Video Background</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    @keyframes float{
+        0% {
+    transform: translateY(0);
+}
+50% {
+    transform: translateY(-14px);
+}
+100% {
+    transform: translateY(0px);
+}
+    }
+    
+
+.image {
+    animation: float 3s ease-in-out infinite;
+    filter: drop-shadow(7px 3px 12px black);
+}
+
+.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+  </style>
+
+  <style>
+    .banner_title_text {
+        font-size: 200px;
+        margin: 0;
+      }
+      .banner_content_section p {
+        font-size: 21px;
+        text-transform: uppercase;
+        margin: 0;
+        letter-spacing: 1px;
+      }
+      .w-80{
+        width: 80%;
+      }
+      .w-90{
+        width: 85%;
+      }  </style>
+
+  <style>
+    .glasmorphism{
+      max-width: 350px ;
+      height: 350px;  
+      backdrop-filter: blur(16px) saturate(180%);
+                  -webkit-backdrop-filter: blur(16px) saturate(180%);
+                  background-color: rgba(255, 255, 255, 0.75);
+                  border-radius: 20px;
+                  border: 1px solid rgba(209, 213, 219, 0.3);
+                  rotate: 45deg;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+
+                  background-color: rgb(255 255 255 / 15%);
+  border: 1px solid rgba(255,255,255,0.1);
+
+  backdrop-filter: blur(10px);
+  border-radius: 50px !important;
+  
+    }
+    .glasmorphism img{
+      rotate: -45deg;
+    }
+  </style>
+
+  <style>
+    /* Smooth scrolling for swiper container */
+.mySwiper {
+  overflow-y: auto;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+}
+
+/* Hide scrollbar for Webkit (Chrome, Safari) */
+.mySwiper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Optional: Add smooth scrolling behavior */
+.mySwiper {
+  scroll-behavior: smooth;
+}
+
+.back-lightblack{
+  background-color:rgb(0 0 0 / 79%);
+  transition: 0.3s;
+}
+  </style>
+</head>
+<body>
+
+    <!-- <header style="position: fixed;" class="fixed-top">
+        <div class="d-flex justify-content-center"></div>
+        <img src="./karmic png (1).png" alt="" srcset="" class="w-25">
+    </header> -->
+    <!-- <nav class="navbar fixed-top navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./karmic png (1).png" alt="" width="100"  class="d-inline-block align-text-top">
+          </a>
+        </div>
+      </nav> -->
+
+      <!-- <nav class="navbar fixed-top bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Bootstrap
+          </a>
+        </div>
+      </nav> -->
+
+    <video autoplay muted loop class="banner-video"  class="position-relative">
+        <!-- Video source and any additional content -->
+        <source src="./kb.mp4" type="video/mp4" class="position-relative"> 
+   
+        <div class="banner-video-overlay"></div> <!-- Overlay div -->
+    </video>
+  
+
+
+  <swiper-container class="mySwiper animeslide  " direction="vertical" pagination="true" pagination-clickable="true"  mousewheel="true"
+   
+   
+   >
+
+    <swiper-slide style="background-color:rgb(0 0 0 / 40%);" >
+       
+
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-12 order-2 order-sm-1 text-white text-left animated-content ">
+                <div class="my-3">
+                    <!-- <h1 class="fw-bold display-5 text-left slide"></h1> -->
+                    <div
+                    class="d-flex justify-content-center align-items-center flex-column text-white banner_content_section"
+                  >
+                  <h5 class="m-0 position-relative " style="top:50px"><span class="typed-text"></span><span class="cursor">&nbsp;</span></h5>
+                    <h3 class="banner_title_text">Karmic</h3>
+                    <p class="text-white">Explore Our Stylish & Unique Bag Collection</p>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <i class="fa-solid fa-angles-down fa-bounce"></i>
+                </div>
+            
+
+           
+             
+              
+              
+            </div>
+         
+          </div>
+        
+        </div>
+ 
+</swiper-slide>
+    <swiper-slide class="back-lightblack" style=" background-color:rgb(0 0 0 / 70%);" >
+       
+
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-sm-6 order-2 order-sm-1 text-white text-left animated-content ">
+                    <h6 class="m-0  " style="top:50px">BAGS FOR WOMEN</h6>
+                    <div class="my-3">
+                        <h1 class="fw-bold display-5 text-left slide"> Unique Bag Collection </h1>
+                    </div>
+                
+
+                 <div class="">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore corporis fugiat laboriosam optio accusamus modi a corrupti est, perferendis, incidunt magni ipsum deleniti maiores doloremque!
+
+                    </p>
+                 </div>
+                 
+                  <button class="button">
+                    BUY NOW
+                    <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                      <path
+                        clip-rule="evenodd"
+                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                        fill-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                  
+                </div>
+                <div class="col-sm-6 order-1 order-sm-2 animated-contentright d-flex justify-content-center ">
+
+                  <div class=" glasmorphism" style="" >
+                    <img src="./karmic/Karmic Bag 04.png" class="img-fluid image" alt="" >
+                  </div>
+                
+                 
+                </div>
+              </div>
+              <div class="scroll-down">
+                <span class="left">Scroll</span>
+                <span class="mouse"></span>
+                <span class="right">Down</span>
+              </div>
+            </div>
+     
+    </swiper-slide>
+    <swiper-slide class="back-lightblack" style=" background-color:rgb(0 0 0 / 75%);">
+   
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-sm-6 order-2 order-sm-1 text-white animated-content " data-aos="fade-right">
+                    <h6 class="m-0  " style="top:50px">BAGS FOR WOMEN</h6>
+                    <div class="my-2">
+                        <h1 class="fw-bold  text-left slide display-5" > World of Bags</h1>
+                    </div>
+                  
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore corporis fugiat laboriosam optio accusamus modi a corrupti est, perferendis, incidunt magni ipsum deleniti maiores doloremque!
+
+                    </p>
+                  <button class="button">
+                    Shop Now
+                    <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                      <path
+                        clip-rule="evenodd"
+                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                        fill-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                  
+                </div>
+                <div class="col-sm-6 order-1 order-sm-2 animated-contentright d-flex justify-content-center">
+                  <div class=" glasmorphism" style="" >
+                    <img src="./karmic/karmic 01.png" class="img-fluid image w-100" alt="">
+                    </div>
+                </div>
+              </div>
+            </div>
+          
+    </swiper-slide>
+    <swiper-slide class="back-lightblack" style=" background-color:rgb(0 0 0 / 80%);">
+      
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-sm-6 order-2 order-sm-1 text-white text-left animated-content">
+                    <h6 class="m-0  " style="top:50px">BAGS FOR WOMEN</h6>
+                    <div class="my-3">
+                        <h1 class="fw-bold display-5">Stylish Of Bags</h1>
+                    </div>
+                  
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore corporis fugiat laboriosam optio accusamus modi a corrupti est, perferendis, incidunt magni ipsum deleniti maiores doloremque!
+
+                    </p>
+                  <button class="button">
+                    Shop Now
+                    <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                      <path
+                        clip-rule="evenodd"
+                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                        fill-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                  
+                </div>
+                <div class="col-sm-6 order-1 order-sm-2 animated-contentright d-flex justify-content-center">
+                  <div class=" glasmorphism" style="" >
+                  <img src="./karmic/Karmic Bag 14.png" class="img-fluid image w-100" alt="" >
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+        
+    </swiper-slide>
+    <swiper-slide style="background-color:rgb(0 0 0 / 79%);" >
+      
+        <div class="container">
+            <div class="row align-items-center">
+              <div class="col-sm-6 order-2 order-sm-1 text-white text-left animated-content">
+                <h6 class="m-0  " style="top:50px">BAGS FOR WOMEN</h6>
+                <div class="my-3">
+                    <h1 class="fw-bold display-5">Karmic Worlds</h1>
+                </div>
+                
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore corporis fugiat laboriosam optio accusamus modi a corrupti est, perferendis, incidunt magni ipsum deleniti maiores doloremque!
+
+                </p>
+                <button class="button">
+                    Shop Now
+                    <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                      <path
+                        clip-rule="evenodd"
+                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                        fill-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                  
+              </div>
+              <div class="col-sm-6 order-1 order-sm-2 animated-contentright d-flex justify-content-center">
+                <div class=" glasmorphism" style="" >
+                <img src="./karmic/Karmic Bag 10_01.png" class="img-fluid image w-90" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+         
+    </swiper-slide>
+    
+  </swiper-container>
+
+
+
+
+  <!-- Bootstrap JS -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="./javascript.js"></script>
+
+  <script>
+
+function handleScroll(event) {
+    // Check if scrolling down or up
+    if (event.deltaY > 0) {
+      // Scroll down, go to next slide
+      mySwiper.slideNext();
+    } else {
+      // Scroll up, go to previous slide
+      mySwiper.slidePrev();
+    }
+  }
+
+  // Add scroll event listener to the document
+  document.addEventListener('wheel', handleScroll);
+
+  // Initialize Swiper
+  var mySwiper = new Swiper('.mySwiper', {
+    direction: 'vertical',
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+  </script>
+
+  <script>
+    const typedTextSpan = document.querySelector(".typed-text");
+const cursorSpan = document.querySelector(".cursor");
+
+const textArray = ["Welcome to", "Branded Leather Bags"];
+const typingDelay = 200;
+const erasingDelay = 100;
+const newTextDelay = 1000; // Delay between current and next text
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+  if (charIndex < textArray[textArrayIndex].length) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+  	setTimeout(erase, newTextDelay);
+  }
+}
+
+function erase() {
+	if (charIndex > 0) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+    textArrayIndex++;
+    if(textArrayIndex>=textArray.length) textArrayIndex=0;
+    setTimeout(type, typingDelay + 1100);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+  if(textArray.length) setTimeout(type, newTextDelay + 250);
+});
+  </script>
+  
+
+</body>
+</html>
